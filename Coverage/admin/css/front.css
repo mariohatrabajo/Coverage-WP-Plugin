@@ -1,0 +1,60 @@
+.data-fields {
+    border-radius: 3px;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+    margin: .5rem 0;
+}
+
+.data-fields::before {
+    position: absolute;
+    font-size: 2.2rem;
+    top: -1.9rem;
+    left: 47%;
+    background-color: white;
+    z-index:1;
+}
+
+.box1, .box2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.box1::before {
+    content: "\1F30D";
+}
+
+.box3, .box2 {
+    position: relative;
+}
+
+.box3::before {
+    content: "👤";
+}
+.box2::before {
+    content: "🪙";
+    padding: 0 .2rem;
+}
+
+.field {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+    z-index: 2;
+}
+
+.staff-row {
+    padding: .2rem 0;
+    border-top: 1px solid lightgray;
+}
+
+.staff-lbl {
+    display: inline-block;
+    width: 45%;
+}
+
+.staff-header {
+    font-weight: 600;
+}
